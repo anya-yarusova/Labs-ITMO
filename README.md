@@ -14,7 +14,7 @@
 3. Создать двумерный массив a размером 12x19. Вычислить его элементы по следующей формуле (где x = x[j]):
 
 <p align= "center">
-	<img srs = "~/Pictures/formula_lab01.png" width = "350">
+	<img srs = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_01/formula_lab01.png" width = "350">
 </p>
 
 4. Напечатать полученный в результате массив в формате с тремя знаками после запятой.
