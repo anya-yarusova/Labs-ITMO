@@ -17,7 +17,6 @@
 <p align="center">
     <img src = "https://user-images.githubusercontent.com/72164287/133395790-6082f12c-af4b-40c6-903e-b42e3a7f7651.png"/>
 </p>
->>>>>>> ca968d4eed3304cf6ffd19620ef75cb209771a56
 
 4. Напечатать полученный в результате массив в формате с тремя знаками после запятой.
 ## Вывод 
