@@ -1,40 +1,130 @@
 # Labs-ITMO
-Лабораторная работа по программированию #1 
+Лабораторная работа по программированию #2 
 
 ## Содержание
 
 1. [Содержание](#содержание)
-1. [Диаграмма классов реализованной объектной модели](#диаграмма)
 1. [Задание](#задание)
+1. [Диаграмма классов реализованной объектной модели](#диаграмма)
 1. [Вывод ](#вывод)
 
 ## Задание
 
-1. Создать одномерный массив a типа long. Заполнить его нечётными числами от 1 до 23 включительно в порядке убывания.
-2. Создать одномерный массив x типа float. Заполнить его 19-ю случайными числами в диапазоне от -12.0 до 8.0.
-3. Создать двумерный массив a размером 12x19. Вычислить его элементы по следующей формуле (где x = x[j]):
+1. На основе базового класса Pokemon написать свои классы для заданных видов покемонов. Каждый вид покемона должен иметь один или два типа и стандартные базовые характеристики:
+   * очки здоровья (HP)
+   * атака (attack)
+   * защита (defense)
+   * специальная атака (special attack)
+   * специальная защита (special defense)
+   * скорость (speed)
+2. Классы покемонов должны наследоваться в соответствии с цепочкой эволюции покемонов. На основе базовых классов PhysicalMove, SpecialMove и StatusMove реализовать свои классы для заданных видов атак.
+3. Атака должна иметь стандартные тип, силу (power) и точность (accuracy). Должны быть реализованы стандартные эффекты атаки. Назначить каждому виду покемонов атаки в соответствии с вариантом. Уровень покемона выбирается минимально необходимым для всех реализованных атак.
+4. Используя класс симуляции боя Battle, создать 2 команды покемонов (каждый покемон должен иметь имя) и запустить бой.
 
 
 <p align="center">
-    <img src = "https://user-images.githubusercontent.com/72164287/133395790-6082f12c-af4b-40c6-903e-b42e3a7f7651.png"/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_02/sources/task_lab_02.png"/>
 </p>
 
-4. Напечатать полученный в результате массив в формате с тремя знаками после запятой.
+
+## Диаграмма классов реализованной объектной модели
+
 ## Вывод 
 
 ```
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-  0,869   0,758   0,985  -1,459  -0,446   0,964   2,601  -0,735   1,048   3,195   1,207   1,578  -1,402  -1,001   1,178  -1,165   0,981  -0,439  -1,654 
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-    NaN     NaN     NaN   0,535   0,769   1,164  33,169   0,698   1,158   0,317   0,365     NaN   1,358   1,328     NaN   0,397   0,408   0,642   0,343 
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-  0,764   0,688   0,833  -0,994  -0,431   0,822   0,514  -0,671   0,866  -0,053   0,934   1,000  -0,986  -0,842   0,924  -0,919   0,831  -0,425  -0,997 
-    NaN     NaN     NaN   0,535   0,769   1,164  33,169   0,698   1,158   0,317   0,365     NaN   1,358   1,328     NaN   0,397   0,408   0,642   0,343 
-    NaN     NaN     NaN   0,535   0,769   1,164  33,169   0,698   1,158   0,317   0,365     NaN   1,358   1,328     NaN   0,397   0,408   0,642   0,343 
-    NaN     NaN     NaN   0,535   0,769   1,164  33,169   0,698   1,158   0,317   0,365     NaN   1,358   1,328     NaN   0,397   0,408   0,642   0,343 
-    NaN     NaN     NaN   0,535   0,769   1,164  33,169   0,698   1,158   0,317   0,365     NaN   1,358   1,328     NaN   0,397   0,408   0,642   0,343 
+ Eevee Frodo from the team Blue enters the battle!
+Mudkip Aragorn from the team Purple enters the battle!
+Eevee Frodo uses Psychic. 
+Mudkip Aragorn loses 5 hit points.
+
+Mudkip Aragorn uses Facade. 
+Eevee Frodo loses 6 hit points.
+
+Eevee Frodo uses Facade. 
+Mudkip Aragorn loses 7 hit points.
+
+Mudkip Aragorn struggles. 
+Eevee Frodo loses 3 hit points.
+Mudkip Aragorn loses 1 hit points.
+Mudkip Aragorn faints.
+Marshtomp Gandalf from the team Purple enters the battle!
+Marshtomp Gandalf uses Psybeam. 
+Eevee Frodo loses 6 hit points.
+Eevee Frodo faints.
+Luvdisc Boromir from the team Blue enters the battle!
+Marshtomp Gandalf uses Psybeam. 
+Luvdisc Boromir loses 5 hit points.
+
+Luvdisc Boromir uses Acient Power. 
+Marshtomp Gandalf loses 2 hit points.
+
+Marshtomp Gandalf uses Psybeam. 
+Luvdisc Boromir loses 7 hit points.
+
+Luvdisc Boromir uses Slam. 
+Marshtomp Gandalf loses 5 hit points.
+
+Marshtomp Gandalf struggles. 
+Luvdisc Boromir loses 4 hit points.
+Marshtomp Gandalf loses 1 hit points.
+Luvdisc Boromir faints.
+Swampert Bilbo from the team Blue enters the battle!
+Swampert Bilbo uses Psybeam. 
+Marshtomp Gandalf loses 5 hit points.
+
+Marshtomp Gandalf misses
+
+Swampert Bilbo uses Psybeam. 
+Marshtomp Gandalf loses 6 hit points.
+Marshtomp Gandalf faints.
+Umbreon Sauron from the team Purple enters the battle!
+Swampert Bilbo misses
+
+Umbreon Sauron uses Psychic. 
+Swampert Bilbo loses 6 hit points.
+
+Swampert Bilbo misses
+
+Umbreon Sauron misses
+
+Swampert Bilbo uses Psybeam. 
+Umbreon Sauron loses 1 hit points.
+Umbreon Sauron isn't affected by PSYCHIC
+
+Umbreon Sauron misses
+
+Swampert Bilbo uses Facade. 
+Umbreon Sauron loses 6 hit points.
+
+Umbreon Sauron misses
+
+Swampert Bilbo uses Psybeam. 
+Umbreon Sauron loses 1 hit points.
+Umbreon Sauron isn't affected by PSYCHIC
+
+Umbreon Sauron uses Facade. 
+Swampert Bilbo loses 4 hit points.
+
+Swampert Bilbo uses Facade. 
+Umbreon Sauron loses 6 hit points.
+
+Umbreon Sauron uses Shadow Balll. 
+Swampert Bilbo loses 4 hit points.
+Swampert Bilbo decreases special defense.
+
+Swampert Bilbo misses
+
+Umbreon Sauron uses Psychic. 
+Swampert Bilbo loses 5 hit points.
+
+Swampert Bilbo misses
+
+Umbreon Sauron uses Psychic. 
+Swampert Bilbo loses 4 hit points.
+Swampert Bilbo faints.
+Team Blue loses its last Pokemon.
+The team Purple wins the battle!
+
 
 ```
 
