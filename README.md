@@ -29,6 +29,10 @@
 
 ## Диаграмма классов реализованной объектной модели
 
+<p align="center">
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_02/sources/diagrama_lab_02.png"/>
+</p>
+
 ## Вывод 
 
 ```
