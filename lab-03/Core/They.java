@@ -5,7 +5,7 @@ import Utility.*;
 public class They extends Person implements PersonInterface {
     private boolean winner = false;
     private boolean known = true;
-    Size planningCone = Size.SMALL;
+    private Size planningCone = Size.SMALL;
 
     public They() {
         super("Персонажи");

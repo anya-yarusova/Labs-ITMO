@@ -6,7 +6,7 @@ public class Pooh extends Person implements PersonInterface {
     static Pooh pooh;
     private boolean winner = false;
     private boolean known = true;
-    Size planningCone = Size.SMALL;
+    private Size planningCone = Size.SMALL;
 
     private Pooh() {
         super("Персонаж");
