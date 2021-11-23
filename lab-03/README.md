@@ -18,7 +18,7 @@
 ## Диаграмма классов реализованной объектной модели
 
 <p align="center">
-    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_03/lab-03/sources/uml_lab_03.png/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_03/lab-03/sources/uml_lab_03.png"/>
 </p>
 
 ## Вывод 
