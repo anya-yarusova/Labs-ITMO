@@ -1,4 +1,4 @@
-package Utility;
+package utility;
 
 public abstract class Person extends Thing {
     public Person(final String name) {

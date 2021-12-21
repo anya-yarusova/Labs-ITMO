@@ -1,4 +1,4 @@
-package Utility;
+package utility;
 
 public enum Size {
     SMALL, BIG;

@@ -1,8 +1,8 @@
-package Core;
+package core;
 
-import Utility.*;
+import utility.*;
 
-public class Cone extends Thing implements ConeInterface {
+public class Cone extends Thing implements FloatAble {
     private Size type = Size.SMALL;
 
     public Cone() {
@@ -67,7 +67,7 @@ public class Cone extends Thing implements ConeInterface {
     }
 
     @Override
-    public void compare(ConeInterface coneAnother) {
+    public void compare(FloatAble coneAnother) {
         if (this.equals(coneAnother))
             System.out.println("Шишки одинакового размера.");
         else
@@ -75,8 +75,8 @@ public class Cone extends Thing implements ConeInterface {
     }
 
     @Override
-    public void surfaceOrdered(ConeInterface coneAnother) {
-        if (this.getSize().equals(Size.BIG)) {
+    public void surfaceOrdered(FloatAble coneAnother) {
+        if (this.getSize() == Size.BIG) {
             this.surface();
             coneAnother.surface();
         } else {

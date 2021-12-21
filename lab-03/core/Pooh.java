@@ -1,8 +1,8 @@
-package Core;
+package core;
 
-import Utility.*;
+import utility.*;
 
-public class Pooh extends Person implements PersonInterface {
+public class Pooh extends Person implements ThrowAble {
     static Pooh pooh;
     private boolean winner = false;
     private boolean known = true;
@@ -73,8 +73,8 @@ public class Pooh extends Person implements PersonInterface {
     }
 
     @Override
-    public void throwing(ConeInterface coneFirst, ConeInterface coneSecond) {
-        if (coneFirst.getSize().equals(coneSecond.getSize())) known = false;
+    public void throwing(FloatAble coneFirst, FloatAble coneSecond) {
+        if (coneFirst.getSize() == coneSecond.getSize()) known = false;
         if (known && planningCone == Size.BIG) winner = true;
         System.out.println("Персонаж '" + name + "' бросил " + "шишку " + coneFirst.getSize().toString() + " и шишку " + coneSecond.getSize().toString() + ".");
     }
@@ -86,7 +86,7 @@ public class Pooh extends Person implements PersonInterface {
     }
 
     @Override
-    public void planning(ConeInterface cone) {
+    public void planning(FloatAble cone) {
         System.out.println("Персонаж '" + name + "' задумал, какая шишка выплывет первой.");
         planningCone = cone.getSize();
     }

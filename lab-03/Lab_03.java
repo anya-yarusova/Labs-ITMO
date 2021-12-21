@@ -1,5 +1,5 @@
-import Core.*;
-import Utility.*;
+import core.*;
+import utility.*;
 
 public class Lab_03 {
 

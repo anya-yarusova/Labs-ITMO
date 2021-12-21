@@ -1,4 +1,4 @@
-package Utility;
+package utility;
 
 public abstract class Thing {
     protected final String name;

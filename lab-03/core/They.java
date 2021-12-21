@@ -1,8 +1,8 @@
-package Core;
+package core;
 
-import Utility.*;
+import utility.*;
 
-public class They extends Person implements PersonInterface {
+public class They extends Person implements ThrowAble {
     private boolean winner = false;
     private boolean known = true;
     private Size planningCone = Size.SMALL;
@@ -67,8 +67,8 @@ public class They extends Person implements PersonInterface {
     }
 
     @Override
-    public void throwing(ConeInterface coneFirst, ConeInterface coneSecond) {
-        if (coneFirst.getSize().equals(coneSecond.getSize())) known = false;
+    public void throwing(FloatAble coneFirst, FloatAble coneSecond) {
+        if (coneFirst.getSize() == coneSecond.getSize()) known = false;
         if (known && planningCone == Size.BIG) winner = true;
         System.out.println("Персонажи '" + name + "' бросили " + "шишку " + coneFirst.getSize().toString() + " и шишку " + coneSecond.getSize().toString() + ".");
     }
@@ -80,7 +80,7 @@ public class They extends Person implements PersonInterface {
     }
 
     @Override
-    public void planning(ConeInterface cone) {
+    public void planning(FloatAble cone) {
         System.out.println("Персонажи '" + name + "' задумали, какая шишка выплывет первой.");
         planningCone = cone.getSize();
     }
