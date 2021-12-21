@@ -80,7 +80,7 @@ public class Pooh extends Person implements ThrowAble {
     }
 
     @Override
-    public void saying(String message){
+    public void saying(String message) {
         System.out.println(this + " сказал: '" + message + "'.");
     }
 
@@ -107,7 +107,7 @@ public class Pooh extends Person implements ThrowAble {
     @Override
     public void seeing(SlideAble slide) {
         System.out.println(this + " смотрит на " + slide.toString() + ".");
-        if (slide.toString().equals("Река")){
+        if (slide.toString().equals("Река")) {
             class Day {
                 String name = "Денёк";
 
@@ -161,7 +161,7 @@ public class Pooh extends Person implements ThrowAble {
     }
 
     @Override
-    public void taking(FloatAble cone){
+    public void taking(FloatAble cone) {
         System.out.println(this + " набрал " + cone.toString() + ".");
     }
 

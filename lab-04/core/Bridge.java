@@ -18,10 +18,11 @@ public class Bridge extends Thing {
     }
 
     @Override
-    public String getName(){
+    public String getName() {
         return name;
     }
 
+    @Override
     public void joinStory() {
         System.out.println(this + " присоединился к истории.");
     }

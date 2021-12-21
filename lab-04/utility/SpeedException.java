@@ -1,8 +1,8 @@
 package utility;
 
-public class SpeedException extends RuntimeException{
+public class SpeedException extends RuntimeException {
     @Override
-    public String toString(){
+    public String toString() {
         return "Неизвестна скорость скольжения!";
     }
 }

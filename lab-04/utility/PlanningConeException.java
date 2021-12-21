@@ -1,8 +1,8 @@
 package utility;
 
-public class PlanningConeException extends Exception{
+public class PlanningConeException extends Exception {
         @Override
-        public String toString(){
+        public String toString() {
             return "Задуманная шишка неизвестена!";
         }
 }

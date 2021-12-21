@@ -102,13 +102,13 @@ public class They extends Thing implements FloatAble, SlideAble {
     }
 
     @Override
-    public void sliding(){
+    public void sliding() {
         if (speed != null) System.out.print(speed.toString() + " ");
         System.out.println(this + " скользила вдаль.");
     }
 
     @Override
-    public void sliding(String place){
+    public void sliding(String place) {
         if (speed != null) System.out.print(speed.toString() + " ");
         System.out.println(this + " скользила " + place);
     }
