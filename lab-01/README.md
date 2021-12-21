@@ -17,7 +17,7 @@
 
 =======
 <p align="center">
-    <img src = "https://user-images.githubusercontent.com/72164287/133395790-6082f12c-af4b-40c6-903e-b42e3a7f7651.png"/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/master/lab-01/sources/formula_lab01.png"/>
 </p>
 
 
