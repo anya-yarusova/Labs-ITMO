@@ -14,8 +14,6 @@
 3. Создать двумерный массив a размером 12x19. Вычислить его элементы по следующей формуле (где x = x[j]):
 
 
-
-=======
 <p align="center">
     <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/master/lab-01/sources/formula_lab01.png"/>
 </p>
