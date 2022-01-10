@@ -11,14 +11,14 @@
 ## Задание
 
 <p align="center">
-    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_04/lab-04/sources/task_lab_04.png"/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/master/lab-04/sources/task_lab_04.png"/>
 </p>
 
 
 ## Диаграмма классов реализованной объектной модели
 
 <p align="center">
-    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_04/lab-04/sources/uml_lab_04.png"/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/master/lab-04/sources/uml_lab_04.png"/>
 </p>
 
 ## Вывод 
