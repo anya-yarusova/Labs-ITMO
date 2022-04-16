@@ -90,12 +90,6 @@ public enum OrganizationType {
 ## Диаграмма классов реализованной объектной модели
 
 <p align="center">
-    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_04/lab-04/sources/uml_lab_04.png"/>
+    <img src = "https://github.com/anya-yarusova/Labs-ITMO/blob/lab_05/lab-05/sources/uml_lab_05.png"/>
 </p>
 
-## Вывод 
-
-```
-
-
-```
