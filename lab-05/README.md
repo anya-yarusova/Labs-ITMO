@@ -87,7 +87,6 @@ public enum OrganizationType {
 
 ```
 
-
 ## Диаграмма классов реализованной объектной модели
 
 <p align="center">
