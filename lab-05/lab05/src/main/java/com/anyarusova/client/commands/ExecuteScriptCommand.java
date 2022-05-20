@@ -15,7 +15,7 @@ public class ExecuteScriptCommand extends Command {
     }
 
     @Override
-    public CommandResult execute(String arg) {
+    public CommandResult execute(String  arg) {
         try {
             userInputManager.connectToFile(new File(arg));
             return new CommandResult(false, "Starting to execute script...");

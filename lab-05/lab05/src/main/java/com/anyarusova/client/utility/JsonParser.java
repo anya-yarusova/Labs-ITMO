@@ -14,7 +14,7 @@ public class JsonParser {
         Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new DateSerializer()).create();
         return g.toJson(collectionData);
     }
-//TODO Почему обрабатывается только Date???
+
     public PriorityQueue<Organization> deSerialize(String strData) throws JsonSyntaxException, IllegalArgumentException {
         Gson g = new GsonBuilder().registerTypeAdapter(java.time.ZonedDateTime.class, new DateDeserializer()).create();
         Type type = new TypeToken<PriorityQueue<Organization>>() {

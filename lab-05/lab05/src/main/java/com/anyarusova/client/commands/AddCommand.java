@@ -1,6 +1,5 @@
 package com.anyarusova.client.commands;
 
-
 import com.anyarusova.client.data.Organization;
 import com.anyarusova.client.utility.CollectionManager;
 import com.anyarusova.client.utility.OutputManager;

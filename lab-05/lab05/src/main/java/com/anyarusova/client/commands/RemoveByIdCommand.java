@@ -20,7 +20,6 @@ public class RemoveByIdCommand extends Command {
             return new CommandResult(false, "Your argument was incorrect. The command was not executed.");
         }
 
-
         if (collectionManager.getMainData().removeIf(x -> x.getId() == intArg)) {
             return new CommandResult(false, "The element was deleted successfully.");
         } else {

@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class FileManager {
+
     private final String filename;
 
     public FileManager(String filename) {

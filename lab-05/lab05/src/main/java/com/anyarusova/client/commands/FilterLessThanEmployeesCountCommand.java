@@ -24,14 +24,16 @@ public class FilterLessThanEmployeesCountCommand extends Command {
         } catch (IllegalArgumentException e) {
             return new CommandResult(false, "Your argument was incorrect");
         }
-
-        for (Organization organization : collectionManager.getMainData()) {
-            Long employeesCount = organization.getEmployeesCount();
-            if (employeesCount.compareTo(inpEmployeesCount) < 0) {
-                output.add(organization.toString());
+        if (collectionManager.getMainData().isEmpty()) {
+            return new CommandResult(false, "Collection is empty");
+        } else {
+            for (Organization organization : collectionManager.getMainData()) {
+                Long employeesCount = organization.getEmployeesCount();
+                if (employeesCount.compareTo(inpEmployeesCount) < 0) {
+                    output.add(organization.toString());
+                }
             }
         }
-
         return new CommandResult(false, output.toString());
     }
 

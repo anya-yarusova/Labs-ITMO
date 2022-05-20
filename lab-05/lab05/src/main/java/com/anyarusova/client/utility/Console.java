@@ -42,14 +42,12 @@ public class Console {
     }
 
     private String[] parseToNameAndArg(String input) {
-        String[] arrayInput = input.split(" ");
+        String[] arrayInput = input.trim().split("\\s+");
         String inputCommand = arrayInput[0];
         String inputArg = "";
-
         if (arrayInput.length >= 2) {
             inputArg = arrayInput[1];
         }
-
         return new String[]{inputCommand, inputArg};
     }
 
