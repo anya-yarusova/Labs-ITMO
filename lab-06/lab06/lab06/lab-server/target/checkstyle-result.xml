@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.37">
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\commands\SaveCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\Server.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\DatagramChannelManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\DateDeserializer.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\DateSerializer.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\FileManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\HistoryManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\JsonParser.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\PriorityQueueManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-server\src\main\java\com\anyarusova\server\utilty\ServerRunner.java">
+</file>
+</checkstyle>

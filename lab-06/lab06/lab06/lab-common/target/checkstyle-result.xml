@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.37">
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\AddCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\AddIfMaxCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\ClearCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\Command.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\CountGreaterThanTypeCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\FilterLessThanEmployeesCountCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\FilterStartsWithNameCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\HelpCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\HistoryCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\InfoCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\RemoveByIdCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\RemoveLowerCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\ShowCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\commands\UpdateCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\data\Address.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\data\Coordinates.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\data\Organization.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\data\OrganizationType.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\dto\CommandDTO.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\dto\CommandResultDTO.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\utility\CollectionManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-common\src\main\java\com\anyarusova\common\utility\HistoryKeeper.java">
+</file>
+</checkstyle>

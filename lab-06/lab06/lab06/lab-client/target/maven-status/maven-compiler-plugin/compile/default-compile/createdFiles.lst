@@ -1,0 +1,7 @@
+com\anyarusova\client\utility\OrganizationMaker.class
+com\anyarusova\client\Client.class
+com\anyarusova\client\commands\ExecuteScriptCommand.class
+com\anyarusova\client\utility\Console.class
+com\anyarusova\client\utility\DatagramSocketManager.class
+com\anyarusova\client\utility\OutputManager.class
+com\anyarusova\client\utility\InputManager.class

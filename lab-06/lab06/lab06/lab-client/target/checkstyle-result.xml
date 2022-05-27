@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.37">
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\Client.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\commands\ExecuteScriptCommand.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\utility\Console.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\utility\DatagramSocketManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\utility\InputManager.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\utility\OrganizationMaker.java">
+</file>
+<file name="D:\university_hse\java\labs\Labs-ITMO\lab-06\lab06\lab06\lab-client\src\main\java\com\anyarusova\client\utility\OutputManager.java">
+</file>
+</checkstyle>
