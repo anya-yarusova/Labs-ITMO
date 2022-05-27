@@ -16,7 +16,7 @@ import java.net.SocketTimeoutException;
 
 public class DatagramSocketManager {
 
-    private static final int MAX_PACKAGE_SIZE = 65507;
+    private static final int PACKAGE_SIZE = 10000;
     private static final int TIMEOUT = 1000;
     private final InetSocketAddress serverAddress;
     private DatagramSocket socket;
@@ -45,11 +45,14 @@ public class DatagramSocketManager {
 
     public CommandResultDTO receiveCommandResult() throws IOException {
         try {
-            DatagramPacket packet = new DatagramPacket(new byte[MAX_PACKAGE_SIZE], MAX_PACKAGE_SIZE);
+            byte[] bufferSize = new byte[PACKAGE_SIZE];
+            DatagramPacket packet = new DatagramPacket(bufferSize, PACKAGE_SIZE);
             socket.receive(packet);
-            ByteArrayInputStream byteInputStream = new ByteArrayInputStream(packet.getData());
-            ObjectInputStream objectInputStream = new ObjectInputStream(byteInputStream);
-            return (CommandResultDTO) objectInputStream.readObject();
+            int size = (int) deserialize(bufferSize);
+            byte[] buffer = new byte[size];
+            packet = new DatagramPacket(buffer, size);
+            socket.receive(packet);
+            return (CommandResultDTO) deserialize(packet.getData());
         } catch (SocketTimeoutException e) {
             return setupNewSocketSuppressed();
         } catch (IOException e) {
@@ -70,5 +73,10 @@ public class DatagramSocketManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+    public Object deserialize(byte[] data) throws IOException, ClassNotFoundException {
+        ByteArrayInputStream in = new ByteArrayInputStream(data);
+        ObjectInputStream is = new ObjectInputStream(in);
+        return is.readObject();
     }
 }

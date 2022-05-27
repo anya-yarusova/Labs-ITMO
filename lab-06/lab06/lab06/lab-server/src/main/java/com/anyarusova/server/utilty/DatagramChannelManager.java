@@ -17,7 +17,7 @@ import java.nio.channels.DatagramChannel;
 import java.util.Objects;
 
 public class DatagramChannelManager {
-    private static final int MAX_PACKAGE_SIZE = 65507;
+    private static final int PACKAGE_SIZE = 10000;
     private final DatagramChannel datagramChannel;
     private SocketAddress lastRemoteAddress;
 
@@ -28,7 +28,7 @@ public class DatagramChannelManager {
     }
 
     public Command receiveCommand() throws IOException {
-        ByteBuffer inputPackages = ByteBuffer.wrap(new byte[MAX_PACKAGE_SIZE]);
+        ByteBuffer inputPackages = ByteBuffer.wrap(new byte[PACKAGE_SIZE]);
         lastRemoteAddress = datagramChannel.receive(inputPackages);
         try {
             if (Objects.nonNull(lastRemoteAddress)) {
@@ -44,38 +44,41 @@ public class DatagramChannelManager {
         return null;
     }
 
-    public void sendResult(CommandResultDTO commandResultDTO) {
+    public void sendResult(CommandResultDTO commandResultDTO) throws IOException {
         if (commandResultDTO.getOutput().equals("The command was not found. Please use \"help\" to know about commands.")
                 || commandResultDTO.getOutput().equals("")) {
             return;
         }
-        ByteArrayOutputStream dataOutputStream = serializeCommandResponse(commandResultDTO);
-        writeNextDatagram(ByteBuffer.wrap(dataOutputStream.toByteArray()));
-    }
-
-    private ByteArrayOutputStream serializeCommandResponse(CommandResultDTO commandResultDTO) {
-        try {
-            ByteArrayOutputStream dataOutputStream = new ByteArrayOutputStream();
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(dataOutputStream);
-            objectOutputStream.writeObject(commandResultDTO);
-            if (dataOutputStream.size() > MAX_PACKAGE_SIZE) {
-                objectOutputStream
-                        .writeObject(new CommandResultDTO("Command result couldn't be sent"));
-            }
-            return dataOutputStream;
-        } catch (IOException e) {
-            return new ByteArrayOutputStream();
-        }
-    }
-
-    private void writeNextDatagram(ByteBuffer byteBuffer) {
-        while (byteBuffer.hasRemaining()) {
-            try {
-                datagramChannel.send(byteBuffer, lastRemoteAddress);
-            } catch (IOException e) {
-                e.printStackTrace();
+        byte[] bufferOutputStream = serialize(commandResultDTO);
+        byte[] bufferSize = serialize(bufferOutputStream.length);
+        int sendSize = bufferSize.length;
+        ByteBuffer sendBufferSize = ByteBuffer.wrap(bufferSize);
+        int limit = PACKAGE_SIZE;
+        while (datagramChannel.send(sendBufferSize, lastRemoteAddress) < sendSize) {
+            limit -= 1;
+            if (limit == 0) {
+                return;
             }
         }
+        ByteBuffer sendBuffer = ByteBuffer.wrap(bufferOutputStream);
+        sendSize = bufferOutputStream.length;
+        limit = PACKAGE_SIZE;
+        while (datagramChannel.send(sendBuffer, lastRemoteAddress) < sendSize) {
+            limit -= 1;
+            if (limit == 0) {
+                return;
+            }
+        }
+    }
+
+    public byte[] serialize(Object obj) throws IOException {
+        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+        objectOutputStream.writeObject(obj);
+        byte[] out = byteArrayOutputStream.toByteArray();
+        byteArrayOutputStream.close();
+        objectOutputStream.close();
+        return out;
     }
 
 }
