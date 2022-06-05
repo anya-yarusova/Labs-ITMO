@@ -2,7 +2,7 @@ package com.anyarusova.common.commands;
 
 import com.anyarusova.common.data.Organization;
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 import java.io.Serializable;
@@ -14,11 +14,11 @@ public class AddCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
         Organization organization = (Organization) arg;
-        organization.setId(collectionManager.getMaxId() + 1);
-        collectionManager.getMainData().add(organization);
-        return new CommandResultDTO("The element was added successfully");
+        organization.setId(-1);
+        dataManager.addOrganization(organization);
+        return new CommandResultDTO("The element was added successfully", true);
     }
 }

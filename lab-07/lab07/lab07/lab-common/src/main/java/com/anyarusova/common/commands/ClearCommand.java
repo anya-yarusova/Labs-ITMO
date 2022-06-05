@@ -1,7 +1,7 @@
 package com.anyarusova.common.commands;
 
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 public class ClearCommand extends Command {
@@ -11,9 +11,9 @@ public class ClearCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
-        collectionManager.getMainData().clear();
-        return new CommandResultDTO("The collection was cleared successfully.");
+        dataManager.clearOwnedData(username);
+        return new CommandResultDTO("The collection was cleared successfully", true);
     }
 }

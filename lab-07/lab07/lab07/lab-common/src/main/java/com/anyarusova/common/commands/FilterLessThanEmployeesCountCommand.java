@@ -1,11 +1,10 @@
 package com.anyarusova.common.commands;
 
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 import java.io.Serializable;
-import java.util.StringJoiner;
 
 public class FilterLessThanEmployeesCountCommand extends Command {
 
@@ -14,24 +13,22 @@ public class FilterLessThanEmployeesCountCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
-        StringJoiner output = new StringJoiner("\n\n");
         Long input;
         try {
             input = Long.parseLong((String) arg);
         } catch (IllegalArgumentException e) {
-            return new CommandResultDTO("Your argument was incorrect");
+            return new CommandResultDTO("Your argument was incorrect", true);
         }
-        if (collectionManager.getMainData().isEmpty()) {
-            return new CommandResultDTO("Collection is empty");
+        if (dataManager.getMaxByIdOrganization() == null) {
+            return new CommandResultDTO("Collection is empty", true);
         }
-        collectionManager.getMainData().stream().filter(it -> it.getEmployeesCount().
-                compareTo(input) < 0).forEach(it -> output.add(it.toString()));
+        String output = dataManager.filterLessThanEmployeesCount(input);
         if (output.length() == 0) {
-            return new CommandResultDTO("There is no elements with employeesCount value less than entered");
+            return new CommandResultDTO("There is no elements with employeesCount value less than entered", true);
         }
-        return new CommandResultDTO(output.toString());
+        return new CommandResultDTO(output, true);
     }
 
 }

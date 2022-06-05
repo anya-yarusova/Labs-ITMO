@@ -1,4 +1,4 @@
-package com.anyarusova.server.utilty;
+package com.anyarusova.server.utility;
 
 import com.anyarusova.common.commands.Command;
 import com.anyarusova.common.dto.CommandDTO;

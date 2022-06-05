@@ -1,8 +1,10 @@
 package com.anyarusova.common.commands;
 
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
+
+import java.io.Serializable;
 
 public class InfoCommand extends Command {
 
@@ -11,17 +13,25 @@ public class InfoCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
-        if (!collectionManager.getMainData().isEmpty()) {
-            return new CommandResultDTO("Collection type: " + collectionManager.getMainData().getClass().toString() + "\n"
-                    + "Number of elements: " + collectionManager.getMainData().size() + "\n"
-                    + "Creation date: " + collectionManager.getCreationDate() + "\n"
-                    + "The biggest element has annualTurnover = " + collectionManager.getMainData().peek().getAnnualTurnover());
-        } else {
-            return new CommandResultDTO("Collection type: " + collectionManager.getMainData().getClass().toString() + "\n"
-                    + "Number of elements: " + collectionManager.getMainData().size() + "\n"
-                    + "Creation date: " + collectionManager.getCreationDate());
+        return new CommandResultDTO(dataManager.getInfoAboutCollections(), true);
+    }
+    public static final class InfoCommandResult implements Serializable {
+        private final int numberOfElements;
+        private final long biggestAnnualTurnover;
+
+        public InfoCommandResult(Integer numberOfElements, long biggestAnnualTurnover) {
+            this.numberOfElements = numberOfElements;
+            this.biggestAnnualTurnover = biggestAnnualTurnover;
+        }
+
+        @Override
+        public String toString() {
+            return "InfoCommandResult{"
+                    + "numberOfElements='" + numberOfElements + '\''
+                    + ", biggestAnnualTurnover=" + biggestAnnualTurnover
+                    + '}';
         }
     }
 }

@@ -6,6 +6,7 @@ import com.anyarusova.common.data.Organization;
 import com.anyarusova.common.data.OrganizationType;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -17,10 +18,12 @@ public class OrganizationMaker {
     private static final String ERROR_MESSAGE = "Your enter was not correct type. Try again";
     private final OutputManager outputManager;
     private final InputManager inputManager;
+    private final String owner;
 
-    public OrganizationMaker(InputManager inputManager, OutputManager outputManager) {
+    public OrganizationMaker(InputManager inputManager, OutputManager outputManager, String owner) {
         this.inputManager = inputManager;
         this.outputManager = outputManager;
+        this.owner = owner;
     }
 
     public <T> T ask(Predicate<T> predicate,
@@ -76,7 +79,7 @@ public class OrganizationMaker {
         Address postalAddress = askForPostalAddress(); //not null
 
         return new Organization(name, coordinates, annualTurnover,
-                employeesCount, type, postalAddress);
+                employeesCount, type, postalAddress, LocalDate.now(), owner);
     }
 
     private Coordinates askForCoordinates() throws IOException {

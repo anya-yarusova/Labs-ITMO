@@ -104,12 +104,12 @@
         <!-- Checks for Size Violations.                    -->
         <!-- See http://checkstyle.sf.net/config_sizes.html -->
         <module name="LambdaBodyLength">
-            <property name="max" value="15"/>
+            <property name="max" value="20"/>
         </module>
         <module name="MethodLength">
             <property name="max" value="40"/>
         </module>
-        <module name="ParameterNumber"/>
+        <!--<module name="ParameterNumber"/>-->
 
         <!-- Checks for whitespace                               -->
         <!-- See http://checkstyle.sf.net/config_whitespace.html -->
@@ -154,7 +154,7 @@
             <property name="setterCanReturnItsClass" value="true"/>
         </module>
         <module name="InnerAssignment"/>
-        <module name="MagicNumber"/>
+        <!--<module name="MagicNumber"/>-->
         <module name="MissingSwitchDefault"/>
         <module name="MultipleVariableDeclarations"/>
         <module name="NestedForDepth">

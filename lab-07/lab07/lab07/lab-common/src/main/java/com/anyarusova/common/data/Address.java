@@ -12,6 +12,14 @@ public class Address implements Serializable {
         this.zipCode = zipCode;
     }
 
+    public String getStreet() {
+        return street;
+    }
+
+    public String getZipCode() {
+        return zipCode;
+    }
+
     @Override
     public String toString() {
         return "Address{"

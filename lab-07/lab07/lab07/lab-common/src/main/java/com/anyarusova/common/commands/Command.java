@@ -1,7 +1,7 @@
 package com.anyarusova.common.commands;
 
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 import java.io.Serializable;
@@ -19,7 +19,7 @@ public abstract class Command implements Serializable {
         this.arg = arg;
     }
 
-    public abstract CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper);
+    public abstract CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username);
 
     public String getName() {
         return name;

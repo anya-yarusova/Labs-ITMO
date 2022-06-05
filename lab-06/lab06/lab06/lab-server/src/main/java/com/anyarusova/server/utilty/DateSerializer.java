@@ -1,4 +1,4 @@
-package com.anyarusova.server.utilty;
+package com.anyarusova.server.utility;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;

@@ -1,6 +1,7 @@
 package com.anyarusova.common.data;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Organization implements Comparable<Organization>, Serializable {
@@ -8,27 +9,33 @@ public class Organization implements Comparable<Organization>, Serializable {
     private int id; // >0, unique, automatic generation
     private final String name; //not null, not empty
     private final Coordinates coordinates; //not null
-    private final java.time.ZonedDateTime creationDate; //not null, automatic generation
+    private final java.time.LocalDate creationDate; //not null, automatic generation
     private final long annualTurnover; //> 0
     private final Long employeesCount; //not null, > 0
-    private final OrganizationType type; //not null
+    private final OrganizationType organizationType; //not null
     private final Address postalAddress; //not null
+    private final String owner;
 
+    //CHECKSTYLE:OFF
     public Organization(String name,
                         Coordinates coordinates,
                         long annualTurnover,
                         Long employeesCount,
                         OrganizationType type,
-                        Address postalAddress) {
+                        Address postalAddress,
+                        LocalDate creationDate,
+                        String owner) {
         this.name = name;
         this.coordinates = coordinates;
         this.annualTurnover = annualTurnover;
         this.employeesCount = employeesCount;
-        this.type = type;
+        this.organizationType = type;
         this.postalAddress = postalAddress;
-        this.creationDate = java.time.ZonedDateTime.now();
+        this.creationDate = creationDate;
+        this.owner = owner;
     }
 
+    //CHECKSTYLE:ON
     @Override
     public String toString() {
         return "Organization{"
@@ -38,7 +45,7 @@ public class Organization implements Comparable<Organization>, Serializable {
                 + ", creationDate=" + creationDate
                 + ", annualTurnover=" + annualTurnover
                 + ", employeesCount=" + employeesCount
-                + ", type=" + type
+                + ", type=" + organizationType
                 + ", postalAddress=" + postalAddress
                 + '}';
     }
@@ -47,8 +54,8 @@ public class Organization implements Comparable<Organization>, Serializable {
         return employeesCount;
     }
 
-    public OrganizationType getType() {
-        return type;
+    public OrganizationType getOrganizationType() {
+        return organizationType;
     }
 
     public long getAnnualTurnover() {
@@ -57,6 +64,22 @@ public class Organization implements Comparable<Organization>, Serializable {
 
     public String getName() {
         return name;
+    }
+
+    public Coordinates getCoordinates() {
+        return coordinates;
+    }
+
+    public LocalDate getCreationDate() {
+        return creationDate;
+    }
+
+    public Address getPostalAddress() {
+        return postalAddress;
+    }
+
+    public String getOwner() {
+        return owner;
     }
 
     @Override
@@ -93,6 +116,6 @@ public class Organization implements Comparable<Organization>, Serializable {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, name, coordinates, creationDate, annualTurnover, employeesCount, type, postalAddress);
+        return Objects.hash(id, name, coordinates, creationDate, annualTurnover, employeesCount, organizationType, postalAddress);
     }
 }

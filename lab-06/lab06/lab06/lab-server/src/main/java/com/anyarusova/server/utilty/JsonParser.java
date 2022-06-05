@@ -1,4 +1,4 @@
-package com.anyarusova.server.utilty;
+package com.anyarusova.server.utility;
 
 import com.anyarusova.common.data.Organization;
 import com.google.gson.Gson;

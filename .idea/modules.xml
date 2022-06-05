@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Labs-ITMO.iml" filepath="$PROJECT_DIR$/.idea/Labs-ITMO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/lab-client.iml" filepath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/lab-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/lab-common.iml" filepath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/lab-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/lab-server.iml" filepath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/lab-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab-07/lab07/lab07/lab07.iml" filepath="$PROJECT_DIR$/lab-07/lab07/lab07/lab07.iml" />
     </modules>
   </component>
 </project>

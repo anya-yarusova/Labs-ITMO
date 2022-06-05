@@ -2,12 +2,12 @@ package com.anyarusova.common.commands;
 
 import com.anyarusova.common.data.Organization;
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 import java.io.Serializable;
 
-public class UpdateCommand extends Command {
+public class UpdateCommand extends Command implements PrivateAccessedOrganizationCommand {
 
     private final Serializable inputId;
 
@@ -17,21 +17,26 @@ public class UpdateCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
         int inputArg;
         try {
             inputArg = Integer.parseInt((String) inputId);
         } catch (NumberFormatException e) {
-            return new CommandResultDTO("Your argument was incorrect. The command was not executed.");
+            return new CommandResultDTO("Your argument was incorrect. The command was not executed.", true);
         }
-        if (collectionManager.getMainData().removeIf(x -> x.getId() == inputArg)) {
-            Organization organization = (Organization) arg;
-            organization.setId(inputArg);
-            collectionManager.getMainData().add(organization);
-            return new CommandResultDTO("The element was updated successfully");
-        } else {
-            return new CommandResultDTO("Written id was not found. The command was not executed");
+        Organization organization = (Organization) arg;
+        dataManager.updateOrganizationById(inputArg, organization);
+        return new CommandResultDTO("Element was updated if id was in the table", true);
+    }
+
+
+    @Override
+    public int getOrganizationId() {
+        try {
+            return Integer.parseInt((String) inputId);
+        } catch (NumberFormatException e) {
+            return -1;
         }
     }
 }

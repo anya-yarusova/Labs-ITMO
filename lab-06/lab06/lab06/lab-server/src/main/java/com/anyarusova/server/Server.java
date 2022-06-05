@@ -2,11 +2,11 @@ package com.anyarusova.server;
 
 import com.anyarusova.common.utility.CollectionManager;
 import com.anyarusova.common.utility.HistoryKeeper;
-import com.anyarusova.server.utilty.DatagramChannelManager;
-import com.anyarusova.server.utilty.FileManager;
-import com.anyarusova.server.utilty.HistoryManager;
-import com.anyarusova.server.utilty.PriorityQueueManager;
-import com.anyarusova.server.utilty.ServerRunner;
+import com.anyarusova.server.utility.DatagramChannelManager;
+import com.anyarusova.server.utility.FileManager;
+import com.anyarusova.server.utility.HistoryManager;
+import com.anyarusova.server.utility.PriorityQueueManager;
+import com.anyarusova.server.utility.ServerRunner;
 
 import java.io.File;
 import java.io.IOException;

@@ -4,8 +4,8 @@ import com.anyarusova.common.commands.Command;
 import com.anyarusova.common.dto.CommandResultDTO;
 import com.anyarusova.common.utility.CollectionManager;
 import com.anyarusova.common.utility.HistoryKeeper;
-import com.anyarusova.server.utilty.FileManager;
-import com.anyarusova.server.utilty.JsonParser;
+import com.anyarusova.server.utility.FileManager;
+import com.anyarusova.server.utility.JsonParser;
 
 import java.io.FileNotFoundException;
 

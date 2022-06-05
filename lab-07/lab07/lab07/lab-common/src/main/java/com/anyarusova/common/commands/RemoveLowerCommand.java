@@ -2,7 +2,7 @@ package com.anyarusova.common.commands;
 
 import com.anyarusova.common.data.Organization;
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 import java.io.Serializable;
@@ -14,10 +14,10 @@ public class RemoveLowerCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
         Organization organization = (Organization) arg;
-        collectionManager.getMainData().removeIf(x -> x.compareTo(organization) < 0);
-        return new CommandResultDTO("Lower elements were removed successfully");
+        dataManager.removeLowerIfOwned(organization, username);
+        return new CommandResultDTO("Lower elements were removed successfully", true);
     }
 }

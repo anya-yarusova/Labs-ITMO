@@ -1,4 +1,4 @@
-package com.anyarusova.server.utilty;
+package com.anyarusova.server.utility;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

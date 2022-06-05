@@ -1,4 +1,4 @@
-package com.anyarusova.server.utilty;
+package com.anyarusova.server.utility;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;

@@ -17,11 +17,11 @@ public class ExecuteScriptCommand {
     public CommandResultDTO execute(InputManager inputManager) {
         try {
             inputManager.connectToFile(new File(this.arg));
-            return new CommandResultDTO("Starting to execute script...");
+            return new CommandResultDTO("Starting to execute script...", true);
         } catch (FileNotFoundException e) {
-            return new CommandResultDTO("There was a problem opening the file. Check if it is available and you have written it in the command arg correctly.");
+            return new CommandResultDTO("There was a problem opening the file. Check if it is available and you have written it in the command arg correctly.", false);
         } catch (UnsupportedOperationException e) {
-            return new CommandResultDTO(e.getMessage());
+            return new CommandResultDTO(e.getMessage(), false);
         }
     }
 }

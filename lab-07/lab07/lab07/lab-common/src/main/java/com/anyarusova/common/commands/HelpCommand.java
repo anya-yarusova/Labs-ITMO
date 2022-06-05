@@ -1,7 +1,7 @@
 package com.anyarusova.common.commands;
 
 import com.anyarusova.common.dto.CommandResultDTO;
-import com.anyarusova.common.utility.CollectionManager;
+import com.anyarusova.common.utility.DataManager;
 import com.anyarusova.common.utility.HistoryKeeper;
 
 public class HelpCommand extends Command {
@@ -11,7 +11,7 @@ public class HelpCommand extends Command {
     }
 
     @Override
-    public CommandResultDTO execute(CollectionManager collectionManager, HistoryKeeper historyKeeper) {
+    public CommandResultDTO execute(DataManager dataManager, HistoryKeeper historyKeeper, String username) {
         historyKeeper.addNote(this.getName());
         return new CommandResultDTO(
                 "help : gives information about available commands\n"
@@ -28,6 +28,6 @@ public class HelpCommand extends Command {
                         + "history : shows last 8 command usages\n"
                         + "count_greater_than_type type: shows count of elements with type value more than entered\n"
                         + "filter_less_than_employees_count employeesCount : shows every element with employeesCount value less than entered\n"
-                        + "filter_starts_with_name name : shows every element with name value starts with entered string");
+                        + "filter_starts_with_name name : shows every element with name value starts with entered string", true);
     }
 }
