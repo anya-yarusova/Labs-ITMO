@@ -30,28 +30,6 @@ public class Console {
             }
         }
     }
-    /*public void start() throws IOException {
-        boolean isWorkingState = true;
-        Scanner scanner = new Scanner(System.in);
-        while (isWorkingState) {
-            try {
-                if (System.in.available() > 0) {
-                    final String input = scanner.nextLine();
-                    if ("exit".equals(input)) {
-                        isWorkingState = false;
-                    }
-                }
-                Command command = datagramChannelManager.receiveCommand();
-                if (Objects.isNull(command)) {
-                    continue;
-                }
-                CommandResultDTO commandResultDTO = command.execute(dataManager, historyKeeper);
-                datagramChannelManager.sendResult(commandResultDTO);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            new SaveCommand(fileManager).execute(dataManager, historyKeeper);
-        }
-    }*/
+
 }
 

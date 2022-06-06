@@ -48,7 +48,7 @@ public final class Server {
                         password
                 );
             } catch (SQLException e) {
-                System.out.println("Cold not connect to the server. Please check if your login and password were correct.");
+                System.out.println("Could not connect to the server. Please check if your login and password were correct.");
                 return;
             }
             System.out.println("Successfully made a connection with the database");

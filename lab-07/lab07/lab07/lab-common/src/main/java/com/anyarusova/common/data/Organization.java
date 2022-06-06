@@ -16,7 +16,6 @@ public class Organization implements Comparable<Organization>, Serializable {
     private final Address postalAddress; //not null
     private final String owner;
 
-    //CHECKSTYLE:OFF
     public Organization(String name,
                         Coordinates coordinates,
                         long annualTurnover,
@@ -35,7 +34,6 @@ public class Organization implements Comparable<Organization>, Serializable {
         this.owner = owner;
     }
 
-    //CHECKSTYLE:ON
     @Override
     public String toString() {
         return "Organization{"
@@ -47,6 +45,7 @@ public class Organization implements Comparable<Organization>, Serializable {
                 + ", employeesCount=" + employeesCount
                 + ", type=" + organizationType
                 + ", postalAddress=" + postalAddress
+                + ", owner=" + owner
                 + '}';
     }
 

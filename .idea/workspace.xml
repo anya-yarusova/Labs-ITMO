@@ -5,69 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="917a9db3-53d2-4dd6-bb4a-fdc8ec7ecc9c" name="Changes" comment="Add branch for lab_07">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/data/DataManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Labs-ITMO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Labs-ITMO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/commands/SaveCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/commands/SaveCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DatagramChannelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DatagramChannelManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DateDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DateDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DateSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/DateSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/HistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/HistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/JsonParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/JsonParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/PriorityQueueManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/PriorityQueueManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/ServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-06/lab06/lab06/lab-server/src/main/java/com/anyarusova/server/utilty/ServerRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/commands/ExecuteScriptCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/commands/ExecuteScriptCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/DatagramSocketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/ConnectionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/OrganizationMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/OrganizationMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/AddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/AddCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/AddIfMaxCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/AddIfMaxCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/ClearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/ClearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/CountGreaterThanTypeCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/CountGreaterThanTypeCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/FilterLessThanEmployeesCountCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/FilterLessThanEmployeesCountCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/FilterStartsWithNameCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/FilterStartsWithNameCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/HelpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/HistoryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/HistoryCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/InfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/InfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/RemoveByIdCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/RemoveByIdCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/RemoveLowerCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/RemoveLowerCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/ShowCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/UpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/UpdateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Coordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/dto/CommandDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/dto/CommandDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/dto/CommandResultDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/dto/CommandResultDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/utility/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/utility/DataManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/commands/SaveCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/DatagramChannelManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/DateDeserializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/DateSerializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/FileManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/HistoryManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/HistoryManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/JsonParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/PriorityQueueManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utilty/ServerRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/Console.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/s_checks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/s_checks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/data/DataManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/data/DataManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/Console.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/itmo-prog-lab7-master" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -126,7 +69,7 @@
       <workItem from="1653694547505" duration="20521000" />
       <workItem from="1654343020982" duration="20843000" />
       <workItem from="1654379511512" duration="8837000" />
-      <workItem from="1654406088459" duration="576000" />
+      <workItem from="1654406088459" duration="5332000" />
     </task>
     <task id="LOCAL-00001" summary="Fix UDP connection">
       <created>1653657025092</created>
@@ -163,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653682325735</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add branch for lab_07">
+      <created>1654410493311</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654410493311</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

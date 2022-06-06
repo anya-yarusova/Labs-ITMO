@@ -30,9 +30,9 @@ public class UpdateCommand extends Command implements PrivateAccessedOrganizatio
         return new CommandResultDTO("Element was updated if id was in the table", true);
     }
 
-
     @Override
     public int getOrganizationId() {
+        System.out.println(inputId);
         try {
             return Integer.parseInt((String) inputId);
         } catch (NumberFormatException e) {

@@ -273,11 +273,11 @@ public class DataManagerImpl implements DataManager {
     }
 
     @Override
-    public boolean validateOwner(String username, int studyGroupId) {
+    public boolean validateOwner(String username, int organizationId) {
         Lock readLock = lock.readLock();
         try {
             readLock.lock();
-            return mainData.stream().anyMatch(it -> it.getId() == studyGroupId && it.getOwner().equals(username));
+            return mainData.stream().anyMatch(it -> it.getId() == organizationId && it.getOwner().equals(username));
         } finally {
             readLock.unlock();
         }
