@@ -70,13 +70,11 @@ public class Console {
                 if ("add".equals(commandName) || "add_if_min".equals(commandName) || "remove_greater".equals(commandName)) {
                     commandArg = organizationMaker.makeOrganization();
                 }
-                if ("update".equals(commandName)) {
+                if ("update_id".equals(commandName)) {
                     commandArg2 = (String) commandArg;
                     commandArg = organizationMaker.makeOrganization();
                 }
-//                if ("register".equals(commandName)) {
-//                    commandArg = dataObjectsMaker.makeLoginAndPassword();
-//                }
+//                if ("register".equals(commandName)) { commandArg = dataObjectsMaker.makeLoginAndPassword();}
                 if ("execute_script".equals(commandName)) {
                     new ExecuteScriptCommand((String) commandArg).execute(inputManager);
                 } else {
@@ -132,7 +130,6 @@ public class Console {
         String[] arrayInput = input.split(" ");
         String inputCommand = arrayInput[0];
         String inputArg = "";
-
         if (arrayInput.length >= 2) {
             inputArg = arrayInput[1];
         }

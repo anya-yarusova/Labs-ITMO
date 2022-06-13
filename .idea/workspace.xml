@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="917a9db3-53d2-4dd6-bb4a-fdc8ec7ecc9c" name="Changes" comment="Add branch for lab_07">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/UpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/commands/UpdateCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Organization.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-common/src/main/java/com/anyarusova/common/data/Organization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/data/DataManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/data/DataManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-server/src/main/java/com/anyarusova/server/utility/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab-07/lab07/lab07/lab-client/src/main/java/com/anyarusova/client/utility/Console.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +66,13 @@
       <workItem from="1654343020982" duration="20843000" />
       <workItem from="1654379511512" duration="8837000" />
       <workItem from="1654406088459" duration="5332000" />
+      <workItem from="1654530164374" duration="376000" />
+      <workItem from="1654855369171" duration="118000" />
+      <workItem from="1654939485357" duration="48000" />
+      <workItem from="1655146904603" duration="1663000" />
+      <workItem from="1655149635286" duration="436000" />
+      <workItem from="1655150675573" duration="439000" />
+      <workItem from="1655151221499" duration="2437000" />
     </task>
     <task id="LOCAL-00001" summary="Fix UDP connection">
       <created>1653657025092</created>
@@ -113,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654410493311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add branch for lab_07">
+      <created>1654530210785</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654530210785</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
